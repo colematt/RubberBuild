@@ -1,0 +1,48 @@
+{
+	"selector": "text.tex",
+	"file_patterns": ["*.tex","*.ltx"],
+	"variants": [
+		{
+			"name": "Rubber - Build",
+			"shell_cmd": "rubber $file_base_name",
+		},
+		{
+			"name": "Rubber - Build (PDF)",
+			"shell_cmd": "rubber --pdf $file_base_name",
+		},
+		{
+			"name": "Rubber - Build (PDF, inplace)",
+			"shell_cmd": "rubber --pdf --inplace $file_base_name",
+		},
+		{
+			"name": "Rubber - Build (Postscript)",
+			"shell_cmd": "rubber --ps $file_base_name",
+		},
+		{
+			"name": "Rubber - Build (Postscript, inplace)",
+			"shell_cmd": "rubber --ps --inplace $file_base_name",
+		},
+		{
+			"name": "Rubber - Clean",
+			"shell_cmd": "rubber --clean $file_base_name"
+		},
+		{
+			"name": "Rubber - Clean (PDF)",
+			"shell_cmd": "rubber --pdf --clean $file_base_name",
+		},
+		{
+			"name": "Rubber - Clean (PDF, inplace)",
+			"shell_cmd": "rubber --pdf --inplace --clean $file_base_name",
+		},
+		{
+			"name": "Rubber - Clean (Postscript)",
+			"shell_cmd": "rubber --ps --clean $file_base_name",
+		},
+		{
+			"name": "Rubber - Clean (Postscript, inplace)",
+			"shell_cmd": "rubber --ps --inplace --clean $file_base_name",
+		},
+	],
+	"file_regex": "^(\\S+):(\\d+):\\s+(.+)",
+	"syntax":"$packages/User/LaTeX.sublime-syntax"
+}
