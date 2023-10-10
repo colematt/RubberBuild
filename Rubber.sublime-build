@@ -44,5 +44,5 @@
 		},
 	],
 	"file_regex": "^(\\S+):(\\d+):\\s+(.+)",
-	"syntax":"$packages/User/LaTeX.sublime-syntax"
+	"syntax":"Packages/User/LaTeX.sublime-syntax"
 }
